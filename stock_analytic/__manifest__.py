@@ -16,8 +16,13 @@
     "category": "Warehouse Management",
     "license": "AGPL-3",
     "depends": [
+        "account",
         "stock_account",
         "analytic",
+
+        #added to fit poi monkeywrench overrides
+        "poi_stock_account_consolidate",
+        "poi_account_analytic",
     ],
     "data": [
         "views/stock_move_views.xml",

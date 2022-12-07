@@ -4,9 +4,9 @@
 from odoo import models
 
 
-class StockRule(models.Model):
+class ProcurementRule(models.Model):
 
-    _inherit = "stock.rule"
+    _inherit = "procurement.rule"
 
     def _get_stock_move_values(
         self,
@@ -19,7 +19,7 @@ class StockRule(models.Model):
         company_id,
         values,
     ):
-        move_values = super(StockRule, self)._get_stock_move_values(
+        move_values = super(ProcurementRule, self)._get_stock_move_values(
             product_id,
             product_qty,
             product_uom,
