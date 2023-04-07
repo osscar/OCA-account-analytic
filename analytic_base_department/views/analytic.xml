@@ -56,10 +56,12 @@
         <field name="account_department_id" widget="selection"/>
       </field>
       <xpath expr="//filter[@name='group_date']" position="after">
-        <filter string="Department"
+        <filter name="group_by_department_id"
+                string="Department"
                 domain="[]"
                 context="{'group_by':'department_id'}"/>
-        <filter string="Account Department"
+        <filter name="group_by_account_department_id"
+                string="Account Department"
                 domain="[]"
                 context="{'group_by':'account_department_id'}"/>
       </xpath>
